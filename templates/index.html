@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="icon" href="{% static 'images/tayyab2.jpg' %}" type="image/icon type">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/my.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body style="background-color:antiquewhite">
+
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Muhammad Tayyab</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'index' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'education' %}">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'skills' %}">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'experience' %}">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Header Section -->
+<header class="container-fluid text-center mt-5">
+    <div style="width:30%; float:left">
+        <img src="{% static 'images/tayyab2.jpg' %}" style="border-radius: 50%; width: 150px; height: 150px;" alt="Profile Picture">
+    </div>
+    <div style="width:70%; float: right; background-color: #865D36;">
+        <h1 class="co">Muhammad Tayyab</h1>
+        <p class="co">Self Learner</p>
+       <a class="anchor1" href="https://en.wikipedia.org/wiki/Web_development">
+        <p class="co">Web Developer</p>
+    </a>
+    </div>
+</header>
+
+<!-- Testimonials Section -->
+<section class="container mt-5">
+  <h2 class="text-with-shadow">Testimonials</h2>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="testimonial">
+              <blockquote class="bq">
+                  "Working with Muhammad Tayyab was an absolute pleasure. His attention to detail and commitment to delivering high-quality work are commendable. I highly recommend him for any web development project."
+              </blockquote>
+              <p class="testimonial-author">Jamshed C, CEO of ABC Company</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="testimonial">
+              <blockquote class="bq">
+                  "I couldn't be happier with the website Muhammad Tayyab created for us. He understood our requirements perfectly and delivered beyond our expectations. I look forward to working with him again."
+              </blockquote>
+              <p class="testimonial-author">M Shariq, Marketing Manager</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="testimonial">
+              <blockquote class="bq">
+                  "Muhammad Tayyab is a highly skilled web developer with an eye for design. He transformed our ideas into a stunning website that has received praise from our clients. We will definitely work with him again."
+              </blockquote>
+              <p class="testimonial-author">Talha Ali, Founder of XYZ Startup</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="{% static 'js/scriptforindex.js' %}"></script>
+</body>
+</html>

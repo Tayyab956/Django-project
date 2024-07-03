@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Contact</title>
+    <link rel="icon" href="{% static 'images/tayyab2.jpg' %}" type="image/icon type">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/my.css' %}">
+</head>
+<body style="background-color: #124e66; color: antiquewhite;">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Muhammad Tayyab</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'index' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'education' %}">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'skills' %}">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'experience' %}">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Contact Section -->
+<section class="container mt-5">
+  <h2>Contact Me</h2>
+  <form method="post" style="color:black">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer mt-5">
+  <div class="container text-center">
+    <ul class="list-inline mb-0">
+      <li class="list-inline-item mr-3"><a href="mailto:f2021266428@umt.edu.pk"><img src="{% static 'images/email.png' %}" alt="Email"></a></li>
+      <li class="list-inline-item mr-3"><a href="https://whatsapp.com"><img src="{% static 'images/wsap.png' %}" alt="WhatsApp"></a></li>
+      <li class="list-inline-item"><a href="https://www.instagram.com"><img src="{% static 'images/ins.jpeg' %}" alt="Instagram"></a></li>
+    </ul>
+    <p class="mt-3">© 2024 Muhammad Tayyab. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript for form validation -->
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Experience</title>
+    <link rel="icon" href="{% static 'images/tayyab2.jpg' %}" type="image/icon type">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/my.css' %}">
+</head>
+<body style="background-color:#d3d9d4; color: #2e3944;"> 
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Muhammad Tayyab</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'index' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'education' %}">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'skills' %}">Skills</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'experience' %}">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Experience Section -->
+<section class="container mt-5">
+  <h2 class="text-with-shadow">Experience</h2>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr style="color: black;">
+          <th>Company</th>
+          <th>Position</th>
+          <th>Duration</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>UET Corp</td>
+          <td>Web Developer</td>
+          <td>Jan 2020 - Present</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet mi non metus dignissim, quis suscipit sapien cursus. Sed ullamcorper.</td>
+        </tr>
+        <tr>
+          <td>IEEE Inc</td>
+          <td>Computer Visions</td>
+          <td>Mar 2018 - Dec 2019</td>
+          <td>Nullam scelerisque, felis id convallis posuere, mi mi mattis erat, vel eleifend ligula lorem at turpis. Curabitur scelerisque.</td>
+        </tr>
+        <tr>
+            <td>Rafi Groups</td>
+            <td>Software Engineer</td>
+            <td>Jan 2019 - Mar 2019</td>
+            <td>Nullam scelerisque, felis id convallis posuere, mi mi mattis erat, vel eleifend ligula lorem at turpis. Curabitur scelerisque.</td>
+          </tr>
+          <tr>
+            <td>UMT Portal</td>
+            <td>Web Developer</td>
+            <td>Apr 2020 - Feb 2021</td>
+            <td>Nullam scelerisque, felis id convallis posuere, mi mi mattis erat, vel eleifend ligula lorem at turpis. Curabitur scelerisque.</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

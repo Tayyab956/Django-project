@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Education</title>
+    <link rel="icon" href="{% static 'images/tayyab2.jpg' %}" type="image/icon type">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/my.css' %}">
+</head>
+<body style="background-color: #FBE9D0;">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Muhammad Tayyab</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'index' %}">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'education' %}">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'skills' %}">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'experience' %}">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Education Section -->
+<section class="container mt-5">
+  <h2 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Education</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="education-item">
+        <h3>Matriculation</h3>
+        <p>ABC School </p>
+        <p>Year of Graduation: 2019</p>
+      </div>
+    </div>
+    <div class="col-md-6" id="d1">
+      <div class="education-item">
+        <h3>Intermediate</h3>
+        <p>MAO COLLEGE</p>
+        <p>Year of Graduation: 2021</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="education-item">
+      <h3>Undergraduation</h3>
+      <p>University Of Manafement And Technology</p>
+      <p>Year of Graduation: 2025</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
